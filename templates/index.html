@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOT Chat</title>
+    <meta name="author" content="Karan">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Link to your favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  </head>
+  <body>
+
+    <!-- Chatbot container -->
+    <main>  
+      <div class="chatbot">
+        <div class="chat-header">
+          <h1>MyBot Chat</h1>
+        </div>
+        <div class="header-sub-text">
+          <p>Created by KARAN with <a class="purple">❤</a></p>
+        </div>
+
+        <div class="spacer" id="messages-container"></div>
+        
+        <form class="chat-form" id="message-form">
+          <textarea type="text" id="message-input" placeholder="Send a message..."></textarea>
+          <button type="submit">➤</button> 
+        </form>
+      </div>
+    </main>
+
+    <!-- JavaScript to call the language model -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
