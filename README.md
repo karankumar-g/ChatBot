@@ -1,5 +1,3 @@
-Sure, here's a sample README.md for your project:
-
 **Conversational Chatbot with BlenderBot**
 
 This project implements a conversational chatbot using the BlenderBot model from Facebook's AI Research (FAIR). The chatbot is built using Python and Flask framework for the backend, and HTML, CSS, and JavaScript for the frontend.
